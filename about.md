@@ -4,10 +4,4 @@ title: About
 permalink: /about/
 ---
 
-
-
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+I work at [Catalyze](http://catalyze.io) as a Developer Experience Engineer. My day-to-day generally entails user experience design (creating paper or in-code wireframes), javascript development (generally in [angular.js](https://angularjs.org/)), and determining/reviewing requirements.
