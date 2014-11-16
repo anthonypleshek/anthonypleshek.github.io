@@ -4,7 +4,7 @@ color backgroundColor = color(0,0,0);
 int circleDiameter = 3;
 
 void setup() {
-    size(300,200);
+    size(400,300);
     frameRate(2);
     background(backgroundColor);
 }
