@@ -9,7 +9,7 @@ var bgColor = color(0);
 var strokeColor = color(255,10);
 
 void setup() {
-  size(200,200);
+  size(400,400);
 
   stroke(strokeColor);
 
