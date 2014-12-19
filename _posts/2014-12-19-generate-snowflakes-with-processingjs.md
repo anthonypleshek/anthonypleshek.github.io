@@ -6,6 +6,7 @@ categories:
 ---
 
 There have been multiple occasions in which I've searched the internet for basic snowflake generation code in javascript. Results generally ended up being things like
+
 * the "falling snow" effect
 * totally unrelated results related to generating unique IDs [via twitter](https://github.com/twitter/snowflake)
 * some neat stuff related to generating snowflakes via cellular automaton such as [this](http://community.wolfram.com/groups/-/m/t/235291)
