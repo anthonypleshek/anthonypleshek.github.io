@@ -9,24 +9,24 @@ var bgColor = color(0);
 var strokeColor = color(255,10);
 
 void setup() {
-  size(400,400);
-  
+  size(200,200);
+
   stroke(strokeColor);
-  
+
   initialize();
 }
 
 void initialize() {
   background(bgColor);
   list = new Array();
-  
+
   var start = {};
   start.depth = 0;
   start.counter = 0;
   start.maxLength = width/2-20;
   start.startLoc = new PVector(width/2,height/2);
   list.push(start);
-  
+
   noiseStartVal = noise(noiseOffset);
 }
 
@@ -47,7 +47,7 @@ void draw() {
       expandLength = firstItem.maxLength/2-abs(firstItem.maxLength/2-firstItem.counter);
     }
   }
-  
+
   for(int i=list.length-1; i>=0; i--) {
     var item = list[i];
     if(item.counter < item.maxLength) {
@@ -68,7 +68,7 @@ void draw() {
       list.splice(i,1);
     }
   }
-  
+
 //  rotationOffset += .7;
 }
 
@@ -81,4 +81,3 @@ void drawHexagonally(PVector startLoc, var distanceFromCenter) {
     popStyle();
   }
 }
-
