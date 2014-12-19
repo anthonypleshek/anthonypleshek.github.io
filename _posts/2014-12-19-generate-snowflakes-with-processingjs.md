@@ -14,8 +14,10 @@ There have been multiple occasions in which I've searched the internet for basic
 * a few scientific papers
 * some pretty neat snowflake generation on [OpenProcessing](http://www.openprocessing.org/search/?q=snowflake)
 
-None of these things were quite what I wanted, which was a quick way to generate semi-realistic snowflakes for the web, so I made one. (You can click to generate new ones.)
+None of these things were quite what I wanted, which was a quick way to generate semi-realistic snowflakes for the web, so I made one.
 
 <canvas height="400" width="400" data-processing-sources="/js/generate-snowflakes.pde" id="generate-snowflakes"></canvas>
+
+NOTE: You can click to generate new ones.
 
 It doesn't work exactly like [real-life snowflakes](http://www.its.caltech.edu/~atomic/snowcrystals/class/class.htm), but it's good enough for me for the time being. The code is up on github [here](https://github.com/anthonypleshek/processingjs-generate-snowflakes).
