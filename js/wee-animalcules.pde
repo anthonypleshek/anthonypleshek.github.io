@@ -4,12 +4,12 @@ ArrayList<Leader> leaders;
 color background = color(25);
 
 void setup() {
-  size(300,200);
+  size(800,300);
   ps = new ParticleSystem();
-  
+
   initializePS();
   initializeLeaders();
-  
+
   smooth();
   pushStyle();
   fill(background);
@@ -19,8 +19,8 @@ void setup() {
 
 void initializeLeaders() {
   leaders = new ArrayList<Leader>();
-  
-  for(int i=0; i<20; i++) {
+
+  for(int i=0; i<100; i++) {
     leaders.add(new Leader(
         new PVector(
             random(0,width),
@@ -31,7 +31,7 @@ void initializeLeaders() {
 
 void initializePS() {
   ps = new ParticleSystem();
-  for(int i=0; i<75; i++) {
+  for(int i=0; i<175; i++) {
     ps.addParticle();
   }
 }
@@ -39,12 +39,13 @@ void initializePS() {
 void draw() {
   pushMatrix();
   noStroke();
-  fill(red(background), green(background), blue(background), 5);
+  //fill(red(background), green(background), blue(background), 5);
+  fill(red(background), green(background), blue(background));
   rect(0, 0, width, height);
   popMatrix();
-  
+
   ps.run();
-  
+
   for(Leader l : leaders) {
     l.run();
   }
@@ -54,7 +55,7 @@ class Leader {
   PVector location;
   PVector direction = new PVector();
   PVector velocity;
-  
+
   Leader(PVector start, PVector velocity) {
     location = start.get();
     this.velocity = velocity;
@@ -62,13 +63,13 @@ class Leader {
     if(direction.x == 0) {
       direction.x = -1;
     }
-    
+
     direction.y = round(random(0,1));
     if(direction.y == 0) {
       direction.y = -1;
     }
   }
-  
+
   PVector getLocation() {
     PVector newLoc = new PVector(location.x,location.y);
     newLoc.x += velocity.x*direction.x;
@@ -80,7 +81,7 @@ class Leader {
       newLoc.x = width-(location.x-width);
       direction.x = -1;
     }
-    
+
     if(newLoc.y < 0) {
       newLoc.y *= -1;
       direction.y = 1;
@@ -88,23 +89,23 @@ class Leader {
       newLoc.y = height-(location.y-height);
       direction.y = -1;
     }
-    
+
     return newLoc;
   }
-  
+
   void run() {
     update();
 //    display();
   }
-  
+
   void update() {
 //    theta += velocity/radius;
     PVector newLoc = getLocation();
     location.x = newLoc.x;
     location.y = newLoc.y;
   }
-  
-  void display() { 
+
+  void display() {
     noStroke();
     fill(255,0,0);
     ellipse(location.x,location.y,2,2);
@@ -149,7 +150,7 @@ class Particle {
 
   // Method to display
   void display() {
-    color particleColor = color(93,170,241,20);
+    color particleColor = color(93,170,241,250);
     stroke(particleColor);
     strokeWeight(10);
     curve(lastLoc.x,lastLoc.y,arcLoc.x,arcLoc.y,location.x,location.y,location.x,location.y);
@@ -162,11 +163,11 @@ class Particle {
     }
 //    ellipse(location.x,location.y,1,1);
   }
-  
+
   boolean isDead() {
     return false;
   }
-  
+
   void updateAcceleration() {
     this.acceleration.x = 0;
     this.acceleration.y = 0;
@@ -198,15 +199,15 @@ class ParticleSystem {
 //    particles.add(new Particle(new PVector(random(width*2/5,width*3/5),random(height*4/9,height*5/9))));
     particles.add(new Particle(new PVector(random(width*0,width*5/5),random(height*0/9,height*9/9))));
   }
-  
+
   ArrayList<Particle> getParticles() {
     return particles;
   }
-  
+
   int size() {
     return particles.size();
   }
-  
+
   void run() {
     for (int i = particles.size()-1; i >= 0; i--) {
       Particle p = particles.get(i);
