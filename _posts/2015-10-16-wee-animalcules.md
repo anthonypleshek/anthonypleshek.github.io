@@ -11,6 +11,6 @@ In an effort to create a particle system which didn't rely on flocking or noise 
 
 A note on the title: "Wee Animalcules" was inspired by Antoni van Leeuwenhoek's descriptions of what we now know of as bacteria and other tiny organisms when he first started looking at pond water, blood, and other fluids through a primitive microscope. The effect I get from watching the above particle system feels like looking through a microscope at tiny organisms; they're moving around and appear to have some sort of mission, but I don't understand what that mission is.
 
-Below is an example with the leader particles shown to help illustrate what's happening and driving the particles.
+Below is an example with the leader particles shown to help illustrate what's happening and driving the particles. I have the code for the original on github [here](https://github.com/anthonypleshek/processingjs-wee-animalcules).
 
 <canvas height="300" width="800" data-processing-sources="/js/wee-animalcules-leaders.pde" id="scratch-art"></canvas>
