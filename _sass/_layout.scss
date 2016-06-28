@@ -2,7 +2,6 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
@@ -152,10 +151,10 @@
         width:         calc(50% - (#{$spacing-unit} / 2));
     }
 
-    .footer-col-3 {
-        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-        width:         calc(100% - (#{$spacing-unit} / 2));
-    }
+    // .footer-col-3 {
+    //     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+    //     width:         calc(100% - (#{$spacing-unit} / 2));
+    // }
 }
 
 @include media-query($on-palm) {
@@ -245,7 +244,42 @@
     }
 }
 
-#generate-snowflakes {
+#generate-snowflakes{
   width:100%;
   max-width:400px;
+}
+
+.row{
+    width: 100%;
+    display: inline-block;
+    margin: 10px;
+}
+
+.video-container{
+    width:100%;
+    margin: 0 auto;
+
+    video{
+        margin: 0 auto;
+        display: block;
+    }
+
+    span{
+        font-size:12px;
+        width:100%;
+        display: block;
+    }
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.column2{
+    width:50%;
+    display: inline-block;
 }
