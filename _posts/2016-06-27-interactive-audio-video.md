@@ -5,7 +5,7 @@ date:   2016-06-27 18:45:00
 categories:
 ---
 
-This is a very old project (April 2013) from when I was at a creative agency called Spreenkler in Milwaukee, which to my knowledge is no longer active. I can't by any means take full credit for this, as multiple coworkers contributed feedback and guidance, particularly in terms of the visual aesthetics.
+This is a very old project (April 2013) from when I was at a creative agency called Spreenkler in Milwaukee, which to my knowledge is no longer active. It was an interactive installation set up during an event at the Milwaukee Art Museum combining inputs from a camera and the music from the musicians performing throughout the night. I don't by any means take full credit for this, as multiple coworkers contributed feedback and guidance, particularly in terms of the visual aesthetics.
 
 <div class="row">
     <div class="column2 left">
